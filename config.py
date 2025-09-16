@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 # Model configuration
-MODEL_NAME = "deepseek/deepseek-r1-zero:free"
+MODEL_NAME = "deepseek/deepseek-r1"
 MAX_ITERATIONS = 10
 MAX_RECURSION = 15
 RESEARCH_DOMAINS = ["gov.in", "economictimes.indiatimes.com", "investindia.gov.in","https://en.wikipedia.org/wiki/"]
@@ -24,4 +24,5 @@ tavily_tool = TavilySearchResults(
     max_results=7,
     search_depth="advanced",
     include_domains=RESEARCH_DOMAINS
+
 )
